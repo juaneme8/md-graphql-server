@@ -2,9 +2,7 @@ const { connect } = require('mongoose')
 
 const connectDB = async () => {
   try {
-    await connect(
-      "mongodb://localhost/tasksdb"
-    );
+    await connect(process.env.MONGODB_URI);
     console.log("MongoDB Connected...");
   } catch (error) {
     console.log(error);
