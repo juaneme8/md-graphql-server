@@ -1,6 +1,13 @@
-# md-graphql-server
-CRUD utilizando una GraphQL API para el agregado de tareas a una DB local MongoDB `tasksdb`.
+# `md-graphql-server`
+This is a simple CRUD application using GraphQL API to generate tasks in a local MongoDB database named `tasksdb`
 
+## Technologies
+* Express
+* Apollo Server
+* GraphQL
+* Mongoose
+
+## Getting Started
 ```
 npm run dev
 ```
