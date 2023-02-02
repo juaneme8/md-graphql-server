@@ -25,8 +25,10 @@ const start = async () => {
     res.status(404).send('404: Page not found');
   });
 
-  app.listen(process.env.PORT, () => {
-    console.log(`Listening on Port ${process.env.PORT}`);
+  const PORT = process.env.PORT;
+
+  app.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}`);
   });
 };
 
